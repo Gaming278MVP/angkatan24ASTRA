@@ -1,7 +1,7 @@
 const request = require("node-superfetch");
 
 module.exports = async (userID) => {
-    const { body } = await request.get(`https://angkatan24.glitch.me//data/api/fetchUser?id=${userID}`);
+    const { body } = await request.get(`https://angkatan24.glitch.me/data/api/fetchUser?id=${userID}`);
     if (body.error === "invalid_id") throw new Error("Invalid User ID");
     else {
         if (body.bot === true) {
