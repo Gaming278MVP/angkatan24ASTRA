@@ -43,9 +43,9 @@ module.exports = async (userID) => {
             } else {
                 const bots = []
                 for (const raw of body.bots) {
-                    const { body: fetchBot } = await request.get(`https://rend-dev.glitch.me/api/fetchUser?id=${raw.botID}`);
-                    const { body: fetchOwner } = await request.get(`https://rend-dev.glitch.me/api/fetchUser?id=${raw.ownerID}`);
-                    const { body: dataBot } = await request.get(`https://rend-dev.glitch.me/api/bots/${raw.botID}`);
+                    const { body: fetchBot } = await request.get(`https://angkatan24.glitch.me/data/api/fetchUser?id=${raw.NameID}`);
+                    const { body: fetchOwner } = await request.get(`https://angkatan24.glitch.me/data/api/fetchUser?id=${raw.IDCard}`);
+                    const { body: dataBot } = await request.get(`https://angkatan24.glitch.me/data/api/bots/${raw.NameID}`);
                     let fetched = {
                         id: fetchBot.id,
                         username: fetchBot.username,
