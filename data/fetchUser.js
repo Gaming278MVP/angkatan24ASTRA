@@ -5,8 +5,8 @@ module.exports = async (userID) => {
     if (body.error === "invalid_id") throw new Error("Invalid User ID");
     else {
         if (body.bot === true) {
-            const { body: bot } = await request.get(`https://rend-dev.glitch.me/api/bots/${userID}`);
-            const { body: fetchedOwnerID } = await request.get(`https://rend-dev.glitch.me/api/fetchUser?id=${bot.ownerID}`);
+            const { body: bot } = await request.get(`https://angkatan24.glitch.me/data/api/bots/${userID}`);
+            const { body: fetchedOwnerID } = await request.get(`https://angkatan24.glitch.me/data/api/fetchUser?id=${bot.ownerID}`);
             fetchedOwnerID.createdAt = new Date(fetchedOwnerID.createdTimestamp).toString();
             let user = {
                 id: body.id,
