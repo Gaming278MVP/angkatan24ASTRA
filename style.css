@@ -4,6 +4,8 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
   color : #373fff;
+  background-image : url({img/dia.png})
+
 }
 
 h1 {
