@@ -1,5 +1,6 @@
 {
-  "ANGKATAN 24 || CORPS",
+  "CONSOLE": [
+   "ANGKATAN 24 || CORPS",
   "KEPALA SEKOLAH SDS AAL",
   "Some code for Console",
   "Instagram API",
@@ -11,4 +12,5 @@
   "--bypassWelcomeBack",
   "JSON FILE",
   "--Goodbye Guys--"
+    ]
 }
